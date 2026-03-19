@@ -28,7 +28,7 @@ Site portfólio pessoal desenvolvido com **HTML**, **CSS** e **JavaScript** puro
 
 ## 🔗 Deploy
 
-Acesse o site: [theGLabs Portfolio](#)
+Acesse o site: [portfolio-website-azure-eight-ls4t7y46mf.vercel.app](https://portfolio-website-azure-eight-ls4t7y46mf.vercel.app)
 
 ## 📬 Contato
 
