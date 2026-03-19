@@ -67,7 +67,6 @@
   transition: width 1.1s cubic-bezier(.4, 0, .2, 1);
 }
 
-/* about blurb */
 .about-blurb {
   margin-top: 4rem;
   display: grid;
@@ -124,35 +123,4 @@
   text-transform: uppercase;
   letter-spacing: .12em;
   margin-top: .3rem;
-}
-
-@media (max-width: 900px) {
-  .about-blurb {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .about-blurb p {
-    font-family: 'Syne', sans-serif;
-    font-size: .85rem;
-    letter-spacing: 0;
-    word-spacing: normal;
-    overflow-wrap: break-word;
-  }
-
-  .stat-box {
-    padding: 1rem .8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .4rem;
-  }
-
-  .stat-number {
-    font-size: 1.6rem;
-    line-height: 1;
-  }
-
-  .stat-label { font-size: .6rem; }
 }
