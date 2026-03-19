@@ -2,7 +2,7 @@ const rHead = document.getElementById('rHead');
 const irisL = document.getElementById('irisL');
 const irisR = document.getElementById('irisR');
 
-const isMobile = window.matchMedia('(pointer: coarse)').matches;
+const isMobile = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
 let targetDX = 0, targetDY = 0;
 let currentDX = 0, currentDY = 0;
