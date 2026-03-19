@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habilidades — Guilherme Fabris</title>
+  <meta name="description" content="Habilidades e stack de Guilherme Fabris — desenvolvedor front-end."/>
+  <meta name="theme-color" content="#7c3aed"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237c3aed'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' font-size='18' fill='white'>G</text></svg>"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/skills.css"/>
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="particles"></canvas>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+
+  <nav>
+    <a class="nav-logo" href="index.html">the<span>GLabs</span></a>
+    <div class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="habilidades.html" class="active">Habilidades</a>
+      <a href="projetos.html">Projetos</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html">Início</a>
+    <a href="habilidades.html" class="active">Habilidades</a>
+    <a href="projetos.html">Projetos</a>
+  </div>
+
+  <main class="inner-page">
+    <div class="section-header fade-up">
+      <div class="section-tag">O que eu sei fazer</div>
+      <h2 class="section-title">Habilidades<span>.</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-desc">Estruturação semântica de páginas web, boas práticas de acessibilidade e SEO.</div>
+        <div class="skill-level"><div class="skill-level-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-desc">Layouts modernos com Flexbox e Grid, animações, responsividade e design systems.</div>
+        <div class="skill-level"><div class="skill-level-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-desc">Manipulação do DOM, eventos, lógica de programação e interatividade no front-end.</div>
+        <div class="skill-level"><div class="skill-level-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">📱</div>
+        <div class="skill-name">Design Responsivo</div>
+        <div class="skill-desc">Sites que se adaptam perfeitamente a qualquer tamanho de tela e dispositivo.</div>
+        <div class="skill-level"><div class="skill-level-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🐙</div>
+        <div class="skill-name">Git & GitHub</div>
+        <div class="skill-desc">Controle de versão, repositórios, commits e colaboração em projetos open source.</div>
+        <div class="skill-level"><div class="skill-level-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon">🔮</div>
+        <div class="skill-name">UI/UX Design</div>
+        <div class="skill-desc">Criação de interfaces intuitivas com foco na experiência do usuário e estética visual.</div>
+        <div class="skill-level"><div class="skill-level-fill" data-width="65"></div></div>
+      </div>
+    </div>
+
+    <div class="about-blurb">
+      <div class="fade-up">
+        <h3>Sobre mim</h3>
+        <p>
+          Sou Guilherme Fabris, desenvolvedor front-end e estudante de Ciências da Computação.
+          Tenho paixão por transformar ideias em interfaces bonitas e funcionais usando apenas
+          HTML, CSS e JavaScript puro.<br><br>
+          Sempre em busca de aprender novas tecnologias e criar projetos que unam performance,
+          design e uma boa experiência de usuário.
+        </p>
+      </div>
+      <div class="about-stats fade-up">
+        <div class="stat-box">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Tecnologias Core</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">💜</div>
+          <div class="stat-label">Paixão por código</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Vontade de aprender</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-count="1">0</div>
+          <div class="stat-label">Projeto no GitHub</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-left">© <span id="footerYear"></span> <span>theGLabs</span></div>
+    <div class="footer-right">
+      <a href="index.html">Início</a>
+      <a href="habilidades.html">Habilidades</a>
+      <a href="projetos.html">Projetos</a>
+    </div>
+  </footer>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>
