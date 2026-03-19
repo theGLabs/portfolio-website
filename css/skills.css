@@ -124,3 +124,29 @@
   letter-spacing: .12em;
   margin-top: .3rem;
 }
+
+@media (max-width: 900px) {
+  .about-blurb {
+    grid-template-columns: 1fr;
+  }
+
+  .about-blurb p {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: 0;
+    overflow-wrap: break-word;
+  }
+
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    padding: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+}
