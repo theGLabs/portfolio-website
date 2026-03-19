@@ -68,7 +68,6 @@
 }
 
 /* about blurb */
-/* about blurb */
 .about-blurb {
   margin-top: 4rem;
   display: grid;
@@ -90,8 +89,6 @@
   font-size: .8rem;
   color: var(--muted);
   line-height: 1.9;
-  word-break: normal;
-  overflow-wrap: break-word;
 }
 
 .about-stats {
@@ -137,8 +134,10 @@
 
   .about-blurb p {
     font-family: 'Syne', sans-serif;
+    font-size: .85rem;
     letter-spacing: 0;
     word-spacing: normal;
+    overflow-wrap: break-word;
   }
 
   .stat-box {
