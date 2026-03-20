@@ -35,4 +35,41 @@ function animateSubtitle() {
   setTimeout(() => document.getElementById('hl3').classList.add('lit'), 1200);
 }
 
-window.addEventListener('load', animateHome);
+// tooltip em loop com frases alternadas
+const tooltipPhrases = [
+  'psst... me olha! 👀',
+  'mexe o mouse aqui! 🖱️',
+  'to de olho em você 👀',
+  'beep boop 🤖',
+  'erro 404: atenção não encontrada 💀',
+];
+
+let tooltipIndex = 0;
+
+function loopTooltip() {
+  const tooltip = document.querySelector('.robot-tooltip');
+  if (!tooltip) return;
+
+  // troca o texto
+  tooltip.textContent = tooltipPhrases[tooltipIndex];
+  tooltipIndex = (tooltipIndex + 1) % tooltipPhrases.length;
+
+  // aparece
+  tooltip.classList.remove('hide');
+  tooltip.classList.add('show');
+
+  // some depois de 2.5s
+  setTimeout(() => {
+    tooltip.classList.remove('show');
+    tooltip.classList.add('hide');
+  }, 2500);
+
+  // próxima frase depois de 4s
+  setTimeout(loopTooltip, 4000);
+}
+
+window.addEventListener('load', () => {
+  animateHome();
+  // começa o loop depois de 2s
+  setTimeout(loopTooltip, 2000);
+});

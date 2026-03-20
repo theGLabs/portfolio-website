@@ -195,7 +195,7 @@ h1.hero-name .highlight {
 /* robot tooltip */
 .robot-tooltip {
   position: absolute;
-  bottom: calc(100% + 12px);
+  bottom: calc(100% + 26px);
   left: 50%;
   transform: translateX(-50%);
   background: var(--surface);
@@ -207,7 +207,17 @@ h1.hero-name .highlight {
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
-  animation: tooltipPop 3s ease-in-out 2s forwards;
+  transition: opacity .4s ease, transform .4s ease;
+}
+
+.robot-tooltip.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.robot-tooltip.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-6px);
 }
 
 .robot-tooltip::after {
@@ -217,13 +227,6 @@ h1.hero-name .highlight {
   transform: translateX(-50%);
   border: 5px solid transparent;
   border-top-color: var(--border);
-}
-
-@keyframes tooltipPop {
-  0%   { opacity: 0; transform: translateX(-50%) translateY(6px); }
-  15%  { opacity: 1; transform: translateX(-50%) translateY(0); }
-  80%  { opacity: 1; transform: translateX(-50%) translateY(0); }
-  100% { opacity: 0; transform: translateX(-50%) translateY(-4px); }
 }
 
 /* robot animations */
