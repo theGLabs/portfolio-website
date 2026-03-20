@@ -33,6 +33,6 @@ Acesse o site: [portfolio-website-azure-eight-ls4t7y46mf.vercel.app](https://por
 ## 📬 Contato
 
 - GitHub: [@theGLabs](https://github.com/theGLabs)
-- LinkedIn: [Guilherme Fabris](https://www.linkedin.com/in/guilherme-fabris-a778a6356/)
+- LinkedIn: [Guilherme Fabris](www.linkedin.com/in/guilherme-fabris1)
 - Instagram: [@gui.dff](https://www.instagram.com/gui.dff)
 - Email: guidiasfabris@gmail.com
