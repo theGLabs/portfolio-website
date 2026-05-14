@@ -34,7 +34,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   overflow-x: hidden;
   overflow-y: scroll;
-  cursor: none;
+  cursor: auto;
 }
 
 /* noise overlay */
